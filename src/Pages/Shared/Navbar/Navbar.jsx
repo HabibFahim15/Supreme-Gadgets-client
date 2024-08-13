@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const navItem= <>
-   <li><Link to={'/'}>Home</Link></li>
-   <li><Link to={'/addItem'}>Add Item</Link></li>
-   <li><Link to={'/about'}>About Us</Link></li>
+   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/'}>Home</Link></li>
+   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/allItem'}>All Product</Link></li>
+   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/addItem'}>Add Item</Link></li>
+   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/about'}>About Us</Link></li>
   </>
   return (
     <div>
@@ -42,7 +43,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-2">
-    <Link to={'/register'} className="btn bg-green-400 border-none text-black hover:text-white">Register</Link>
+    <Link to={'register'} className="btn bg-green-400 border-none text-black hover:text-white">Register</Link>
     <Link to={'/login'} className="btn bg-red-400 border-none text-black hover:text-white">Login</Link>
   </div>
 </div>
