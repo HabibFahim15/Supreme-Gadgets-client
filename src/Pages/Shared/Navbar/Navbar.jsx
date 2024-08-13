@@ -8,8 +8,8 @@ const Navbar = () => {
    <li><Link to={'/about'}>About Us</Link></li>
   </>
   return (
-    <div className='mx-8'>
-      <div className="navbar bg-base-100">
+    <div>
+      <div className="navbar text-black bg-sky-100 rounded-md mb-8 md:px-20">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +28,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-52 p-2 shadow">
         
         {navItem}
         
@@ -42,8 +42,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-2">
-    <Link to={'/register'} className="btn bg-green-200 text-black hover:text-white">Register</Link>
-    <Link to={'/login'} className="btn bg-red-200 text-black hover:text-white">Login</Link>
+    <Link to={'/register'} className="btn bg-green-400 border-none text-black hover:text-white">Register</Link>
+    <Link to={'/login'} className="btn bg-red-400 border-none text-black hover:text-white">Login</Link>
   </div>
 </div>
     </div>
