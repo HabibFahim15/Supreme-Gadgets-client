@@ -1,56 +1,56 @@
 [
   {
-      "id": 1,
+      "_id": 1,
       "name": "UltraFast Wireless Charger",
       "description": "A sleek and fast wireless charger compatible with all major smartphones.",
       "category": "Chargers",
       "price": 29.99,
-      "image": "https://example.com/images/wireless_charger.jpg",
+      "image": "https://vireless-australia.com/wp-content/uploads/2023/01/Untitled-design-6.png",
       "rating": 4.8
   },
   {
-      "id": 2,
+      "_id": 2,
       "name": "Noise-Cancelling Bluetooth Headphones",
       "description": "Experience music like never before with our top-tier noise-cancelling headphones.",
       "category": "Audio",
       "price": 199.99,
-      "image": "https://example.com/images/bluetooth_headphones.jpg",
+      "image": "https://cdn.thewirecutter.com/wp-content/media/2023/09/noise-cancelling-headphone-2048px-0876.jpg",
       "rating": 4.6
   },
   {
-      "id": 3,
+      "_id": 3,
       "name": "Smartwatch Pro X",
       "description": "Stay connected and track your fitness with the latest in wearable technology.",
       "category": "Wearables",
       "price": 149.99,
-      "image": "https://example.com/images/smartwatch.jpg",
+      "image": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20230706_1688634217_570684.jpeg",
       "rating": 4.7
   },
   {
-      "id": 4,
+      "_id": 4,
       "name": "Portable Power Bank 20000mAh",
       "description": "Keep your devices charged on the go with this high-capacity power bank.",
       "category": "Chargers",
       "price": 39.99,
-      "image": "https://example.com/images/power_bank.jpg",
+      "image": "https://www.shopz.com.bd/wp-content/uploads/2024/01/VOLTME-Hypercore-20K-Portable-Charger-20000mAh-Power-Bank-1-jpg.webp",
       "rating": 4.5
   },
   {
-      "id": 5,
+      "_id": 5,
       "name": "4K Action Camera",
       "description": "Capture your adventures in stunning 4K with this durable action camera.",
       "category": "Cameras",
       "price": 249.99,
-      "image": "https://example.com/images/action_camera.jpg",
+      "image": "https://www.techlandbd.com/image/catalog/Action%20Camera/Eken/eken-h5s-plus-4k-action-camera.jpg",
       "rating": 4.9
   },
   {
-      "id": 6,
+      "_id": 6,
       "name": "Smart Home Security System",
       "description": "Protect your home with our advanced smart home security system.",
       "category": "Security",
       "price": 299.99,
-      "image": "https://example.com/images/security_system.jpg",
+      "image": "https://phandroid.com/wp-content/uploads/2019/09/skycontrol-panel-night-security-arm.jpg",
       "rating": 4.8
   },
   {
@@ -59,7 +59,7 @@
       "description": "Enjoy high-quality sound in a compact design with our Bluetooth speaker mini.",
       "category": "Audio",
       "price": 49.99,
-      "image": "https://example.com/images/bluetooth_speaker.jpg",
+      "image": "https://diamu.com.bd/wp-content/uploads/2021/08/Mi-Portable-Bluetooth-Speaker-Mini.jpg",
       "rating": 4.3
   },
   {
@@ -68,7 +68,7 @@
       "description": "True wireless freedom with premium sound quality.",
       "category": "Audio",
       "price": 79.99,
-      "image": "https://example.com/images/wireless_earbuds.jpg",
+      "image": "https://dvf83rt16ac4w.cloudfront.net/upload/media/1714908152105505.jpeg",
       "rating": 4.4
   },
   {
@@ -77,7 +77,7 @@
       "description": "Save energy and control your home temperature from anywhere with our smart thermostat.",
       "category": "Smart Home",
       "price": 129.99,
-      "image": "https://example.com/images/smart_thermostat.jpg",
+      "image": "https://cdn.thewirecutter.com/wp-content/media/2022/11/smartthermostats-2048px-3105.jpg",
       "rating": 4.7
   },
   {
@@ -86,7 +86,7 @@
       "description": "Automate your cleaning routine with this powerful robot vacuum cleaner.",
       "category": "Home Appliances",
       "price": 399.99,
-      "image": "https://example.com/images/robot_vacuum.jpg",
+      "image": "https://nypost.com/wp-content/uploads/sites/2/2021/11/Dreametech-Bot-D9-Robot-Vacuum.png",
       "rating": 4.6
   },
   {
@@ -95,7 +95,7 @@
       "description": "Dive into virtual reality with our immersive VR headset.",
       "category": "Gaming",
       "price": 299.99,
-      "image": "https://example.com/images/vr_headset.jpg",
+      "image": "https://cdn.thewirecutter.com/wp-content/media/2020/11/vr-headset-2048px-9008.jpg",
       "rating": 4.8
   },
   {
@@ -104,7 +104,7 @@
       "description": "Control the ambiance of your home with our smart light bulb, compatible with all major smart home systems.",
       "category": "Smart Home",
       "price": 19.99,
-      "image": "https://example.com/images/smart_light_bulb.jpg",
+      "image": "https://images.prismic.io/palmettoblog/4c45721a-559d-4c91-8af7-52c4d2712109_smart-lights-save-money.jpg?auto=compress,format&rect=150,0,900,600&w=1200&h=800",
       "rating": 4.5
   },
   {
@@ -113,7 +113,7 @@
       "description": "Enhance your gaming experience with our mechanical RGB gaming keyboard.",
       "category": "Gaming",
       "price": 99.99,
-      "image": "https://example.com/images/gaming_keyboard.jpg",
+      "image": "https://www.csi.com.bd/wp-content/uploads/2023/12/PC-POWER-K98-Gaming-RGB-Mechanical-Keyboard.webp",
       "rating": 4.6
   },
   {
@@ -122,7 +122,7 @@
       "description": "Capture breathtaking aerial footage with our 4K drone.",
       "category": "Cameras",
       "price": 499.99,
-      "image": "https://example.com/images/drone.jpg",
+      "image": "https://s.yimg.com/ny/api/res/1.2/1IsErazgOShy92nw728vIg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ1OQ--/https://media.zenfs.com/en/bgr_208/92dd423997d4e82b9425b3e3bb1784c4",
       "rating": 4.9
   },
   {
@@ -131,7 +131,7 @@
       "description": "Turn any space into a home theater with our portable Bluetooth projector.",
       "category": "Projectors",
       "price": 349.99,
-      "image": "https://example.com/images/bluetooth_projector.jpg",
+      "image": "https://www.caiweishop.com/cdn/shop/files/A8_AB.jpg?v=1711529846&width=1445",
       "rating": 4.7
   },
   {
@@ -140,7 +140,7 @@
       "description": "Precision and speed in a wireless design, perfect for gamers.",
       "category": "Gaming",
       "price": 59.99,
-      "image": "https://example.com/images/gaming_mouse.jpg",
+      "image": "https://i5.walmartimages.com/seo/Razer-Mamba-Wireless-Gaming-Mouse-Chroma-RGB-Lighting_ab8bc726-9e80-4585-b09a-67582b2234c2_1.7138a9e13f31bcfd71df390d580f14ef.jpeg",
       "rating": 4.6
   },
   {
@@ -149,7 +149,7 @@
       "description": "See who's at your door from anywhere with our smart doorbell.",
       "category": "Security",
       "price": 149.99,
-      "image": "https://example.com/images/smart_doorbell.jpg",
+      "image": "https://www.shopz.com.bd/wp-content/uploads/2021/12/Xiaomi-IMILAB-D1-Smart-Video-Doorbell-Security-Camera.jpg",
       "rating": 4.7
   },
   {
@@ -158,7 +158,7 @@
       "description": "High-speed portable storage with 1TB of capacity.",
       "category": "Storage",
       "price": 129.99,
-      "image": "https://example.com/images/portable_ssd.jpg",
+      "image": "https://dvf83rt16ac4w.cloudfront.net/upload/product/20220727_1658910043_856345.jpeg",
       "rating": 4.8
   },
   {
@@ -167,7 +167,7 @@
       "description": "Control any device with our smart plug, compatible with all major smart home systems.",
       "category": "Smart Home",
       "price": 24.99,
-      "image": "https://example.com/images/smart_plug.jpg",
+      "image": "https://m.media-amazon.com/images/I/412dVrtJrbS._SL1500_.jpg",
       "rating": 4.5
   },
   {
@@ -176,7 +176,7 @@
       "description": "Perfect for travelers and light sleepers, these earplugs provide a quiet and peaceful environment.",
       "category": "Audio",
       "price": 19.99,
-      "image": "https://example.com/images/earplugs.jpg",
+      "image": "https://ortorex.au/wp-content/uploads/2023/08/Noise-Cancelling-Silicone-Earplugs-for-Sleeping-ORTOREX-1-jpg.webp",
       "rating": 4.3
   }
 ]

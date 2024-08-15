@@ -1,13 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const Register = () => {
+const {createUser}= useContext(AuthContext)
+
+  const handleRegister=(event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
+    const number = form.number.value;
+    console.log(name,email, password,number);
+
+    createUser(email,password)
+    .then(result=>{
+      const user = result.user;
+      console.log(user);
+    })
+    .then(error=>{
+      console.log(error);
+    })
+  }
+
   return (
     <div className="bg-white dark:bg-base-100 py-6 sm:py-8 lg:py-12">
   <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
     <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 dark:text-gray-100 md:mb-8 lg:text-3xl">Register Now</h2>
 
-    <form className="mx-auto max-w-lg rounded-lg border dark:border-gray-700">
+    <form onSubmit={handleRegister} className="mx-auto max-w-lg rounded-lg border dark:border-gray-700">
       <div className="flex flex-col gap-4 p-4 md:p-8">
         
         <div>
@@ -30,7 +52,7 @@ const Register = () => {
           <input name="password" className="w-full rounded border bg-gray-50 dark:bg-gray-800 px-3 py-2 text-gray-800 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus:ring" />
         </div>
 
-        <button className="block rounded-lg bg-gray-800 dark:bg-gray-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 dark:hover:bg-gray-600 focus-visible:ring active:bg-gray-600 dark:active:bg-gray-500 md:text-base">Register</button>
+        <input className="block rounded-lg bg-gray-800 dark:bg-gray-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 dark:hover:bg-gray-600 focus-visible:ring active:bg-gray-600 dark:active:bg-gray-500 md:text-base" type="submit" value="Register" />
 
         <div className="relative flex items-center justify-center">
           <span className="absolute inset-x-0 h-px bg-gray-300 dark:bg-gray-600"></span>

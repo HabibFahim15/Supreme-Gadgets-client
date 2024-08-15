@@ -1,12 +1,12 @@
 
 
 const HomeCard = ({service}) => {
-  const { name, img, description, price } = service;
+  const { name, image, description, price } = service;
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
     <figure>
-      <img
-        src={img}
+      <img className="h-60 w-full"
+        src={image}
         alt="Shoes" />
     </figure>
     <div className="card-body">
