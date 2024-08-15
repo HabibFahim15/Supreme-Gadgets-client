@@ -1,8 +1,8 @@
-import React from 'react';
 
 const Section = () => {
+ 
   return (
-    <div className="mx-auto  w-full my-8">
+    <div className="mx-auto  w-full my-24">
     <div className="flex flex-col overflow-hidden rounded-lg bg-gray-200 sm:flex-row md:h-80">
      
       <div className="order-first h-48 w-full bg-gray-300 sm:order-none sm:h-auto sm:w-1/2 lg:w-2/5">

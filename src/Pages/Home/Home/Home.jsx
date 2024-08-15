@@ -1,4 +1,5 @@
 import Banner from "../../../Components/Home/Banner";
+import Products from "../../../Components/Home/Products";
 import Section from "../../../Components/Home/Section";
 
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <Section></Section>
+      <Products></Products>
     </div>
   );
 };
