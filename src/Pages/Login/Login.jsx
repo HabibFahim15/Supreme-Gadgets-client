@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
+import { SyncLoader } from 'react-spinners';
 
 const Login = () => {
 
-const {loginUser}= useContext(AuthContext)
+const {loginUser, loading}= useContext(AuthContext)
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -12,8 +13,12 @@ const {loginUser}= useContext(AuthContext)
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+    if(password.length < 6){
+      return alert('password must be at least 6 characters')
+    }
     loginUser(email,password)
     .then(result=>{
+      
       const user = result.user;
       console.log(user);
     })
@@ -38,8 +43,11 @@ const {loginUser}= useContext(AuthContext)
           <label for="password" className="mb-2 inline-block text-sm text-gray-800 dark:text-gray-200 sm:text-base">Password</label>
           <input name="password" placeholder='Enter Your Password' className="w-full rounded border bg-gray-50 dark:bg-gray-800 px-3 py-2 text-gray-800 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus:ring" />
         </div>
-
-          <input className="block rounded-lg bg-gray-800 dark:bg-gray-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 dark:hover:bg-gray-600 focus-visible:ring active:bg-gray-600 dark:active:bg-gray-500 md:text-base" type="submit" value="Login" />
+       
+        
+          {
+            loading ? <btn className=" rounded-lg bg-gray-800 dark:bg-gray-700  text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 dark:hover:bg-gray-600 focus-visible:ring active:bg-gray-600 dark:active:bg-gray-500 md:text-base h-12 flex justify-center items-center "><SyncLoader /></btn> : <input className="block rounded-lg bg-gray-800 dark:bg-gray-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-gray-700 dark:hover:bg-gray-600 focus-visible:ring active:bg-gray-600 dark:active:bg-gray-500 md:text-base" type="submit" value="Login" />
+          }
         
 
         <div className="relative flex items-center justify-center">
