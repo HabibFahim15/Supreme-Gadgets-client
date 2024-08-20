@@ -14,8 +14,7 @@ const { user, logOut } = useContext(AuthContext);
 
   const navItem= <>
    <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/'}>Home</Link></li>
-   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/allItem'}>All Product</Link></li>
-   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/addItem'}>Add Item</Link></li>
+   <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/allitem'}>All Product</Link></li>
    <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/about'}>About Us</Link></li>
    
   </>
