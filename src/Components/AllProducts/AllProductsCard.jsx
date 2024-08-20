@@ -1,8 +1,10 @@
+import { Fade } from "react-awesome-reveal";
 
 const AllProductsCard = ({service} ) => {
   const { name, image, description, price, rating } = service;
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+   <Fade damping={0.5}>
+     <div className="card bg-base-100 w-96 shadow-xl">
     <figure>
       <img className="h-60 w-full"
         src={image}
@@ -22,6 +24,7 @@ const AllProductsCard = ({service} ) => {
       </div>
     </div>
   </div>
+   </Fade>
   );
 };
 

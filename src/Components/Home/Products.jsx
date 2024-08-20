@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import HomeCard from './HomeCard';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   const [services, setServices] = useState([]);
@@ -7,8 +8,11 @@ const Products = () => {
   useEffect(() => {
     fetch('services.json')
       .then(res => res.json())
-      .then(data => setServices(data))
-  })
+      .then(data => {
+        const latestData = data.slice(-9);
+        setServices(latestData);
+      });
+  }, []);
   return (
     <div className='container mx-auto mb-8'>
       <div className='text-center my-20'>
@@ -20,6 +24,9 @@ const Products = () => {
         {
           services.map(service => <HomeCard key={service._id} service={service}></HomeCard>)
         }
+      </div>
+      <div className='flex justify-center my-8'>
+      <Link to={'/allitem'} className='btn hover:btn-primary border-b-primary border-b-8  rounded-2xl px-8 py-4 bg-gray-200 font-medium hover:font-bold hover:text-white text-black '>View All</Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
+import AboutUs from "../../../Components/Home/AboutUs/AboutUs";
 import Banner from "../../../Components/Home/Banner";
+import GetInTouch from "../../../Components/Home/ContactUs/GetInTouch";
 import Products from "../../../Components/Home/Products";
-import Section from "../../../Components/Home/Section";
 
 
 
@@ -8,8 +9,9 @@ const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <Section></Section>
+      <AboutUs></AboutUs>
       <Products></Products>
+      <GetInTouch ></GetInTouch>
     </div>
   );
 };
