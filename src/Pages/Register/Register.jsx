@@ -3,19 +3,25 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 
 const Register = () => {
-const {createUser}= useContext(AuthContext)
+const {createUser,updateUserProfile}= useContext(AuthContext)
 
   const handleRegister=(event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
+    const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
     const number = form.number.value;
-    console.log(name,email, password,number);
+    console.log(name,email, password, photo, number);
 
     createUser(email,password)
     .then(result=>{
+      updateUserProfile(name, photo, number)
+      .then(()=>{
+        console.log('profile updated');
+        
+      })
       const user = result.user;
       console.log(user);
     })
@@ -35,6 +41,10 @@ const {createUser}= useContext(AuthContext)
         <div>
           <label for="name" className="mb-2 inline-block text-sm text-gray-800 dark:text-gray-200 sm:text-base">Name</label>
           <input name="name" className="w-full rounded border bg-gray-50 dark:bg-gray-800 px-3 py-2 text-gray-800 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+        </div>
+        <div>
+          <label for="name" className="mb-2 inline-block text-sm text-gray-800 dark:text-gray-200 sm:text-base">Photo</label>
+          <input name="photo" className="w-full rounded border bg-gray-50 dark:bg-gray-800 px-3 py-2 text-gray-800 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus:ring" />
         </div>
 
         <div>

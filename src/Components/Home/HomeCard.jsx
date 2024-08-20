@@ -5,7 +5,7 @@ const HomeCard = ({service}) => {
   const { name, image, description, price } = service;
   return (
    <Fade cascade damping={0.5}>
-     <div className="card bg-base-100 w-96 shadow-xl">
+     <div className="card bg-base-100  md:w-96 shadow-xl">
     <figure>
       <img className="h-60 w-full"
         src={image}
