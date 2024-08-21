@@ -15,7 +15,7 @@ const Navbar = () => {
   const navItem = <>
     <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/'}>Home</Link></li>
     <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/allitem'}>All Product</Link></li>
-    <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/about'}>About Us</Link></li>
+    <li className='hover:text-purple-500 font-semibold text-black'><Link to={'/aboutus'}>About Us</Link></li>
 
   </>
   return (
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <div tabIndex={0}  className="btn  btn-ghost btn-circle">
                   <div className="avatar">
                     <div className="w-16 rounded-full">
-                      <img src={user.photoURL} />
+                      {user?.photoURL ? <img src={user.photoURL} /> : <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671122.jpg" alt="user" />}
                     </div>
                   </div>
                 </div>
