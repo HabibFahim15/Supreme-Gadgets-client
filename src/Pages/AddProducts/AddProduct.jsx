@@ -8,13 +8,14 @@ const AddProduct = () => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
+    const category = form.category.value;
     const image = form.photo.value;
     const description = form.description.value;
     const price = form.price.value;
     const quantity = form.quantity.value;
     const email = user?.email
 
-    const product = { name, image, description, price, email, quantity };
+    const product = { name,category, image, description, price, email, quantity };
     fetch('http://localhost:5000/products',{
       method: 'POST',
       headers: {
