@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProvider';
 import { SyncLoader } from 'react-spinners';
 import Swal from 'sweetalert2';
@@ -7,6 +7,9 @@ import Swal from 'sweetalert2';
 const Login = () => {
 
 const {loginUser, loading, googleSignIn}= useContext(AuthContext)
+const navigate = useNavigate();
+const location = useLocation()
+const from = location.state?.from?.pathname || '/';
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -41,6 +44,7 @@ const {loginUser, loading, googleSignIn}= useContext(AuthContext)
         icon: "success",
         title: "Successfully Login"
       });
+      navigate(from, {replace: true})
       console.log(user);
     })
     .catch(error=>{

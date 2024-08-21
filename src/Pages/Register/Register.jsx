@@ -5,6 +5,9 @@ import Swal from 'sweetalert2';
 
 const Register = () => {
 const {createUser,updateUserProfile,googleSignIn}= useContext(AuthContext)
+const navigate = useNavigate();
+const location = useLocation()
+const from = location.state?.from?.pathname || '/';
 
   const handleRegister=(event) => {
     event.preventDefault();

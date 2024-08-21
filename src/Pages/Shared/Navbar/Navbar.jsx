@@ -68,8 +68,9 @@ const Navbar = () => {
                   <div className="divider font-semibold">User Info</div>
                   <li className='font-semibold text-md'><a>Name: {user.displayName}</a></li>
                   <li className='font-semibold text-md'><a>Email: {user.email}</a></li>
-                  <Link to={'addProduct'} className='btn-ghost my-2 font-semibold bg-cyan-200 text-black btn'>Add Product</Link>
-                  <Link to={'addedProduct'} className='btn-ghost mb-6 font-semibold bg-cyan-200 text-black btn'>Added Product</Link>
+                  <div className="divider font-semibold">Other Option</div>
+                  <Link to={'addProduct'} className='btn-ghost  font-semibold bg-slate-200 hover:text-white text-black btn'>Add Product</Link>
+                  <Link to={'addedProduct'} className='btn-ghost mt-2 mb-4 font-semibold bg-slate-200 hover:text-white text-black btn'>Added Product</Link>
                   <li className='flex rounded-lg bg-red-400 border-red-100'><a  onClick={handleLogOut} className='btn-ghost  font-semibold text-white btn'>Log Out</a></li>
                 </ul>
               </div>
