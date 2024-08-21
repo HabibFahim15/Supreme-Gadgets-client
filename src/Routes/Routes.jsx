@@ -6,6 +6,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AllProducts from "../Pages/AllProducts/AllProducts";
 import AddProduct from "../Pages/AddProducts/AddProduct";
+import AddedProducts from "../Pages/AddedProduct/AddedProducts";
+import ProductDetails from "../Pages/ProductDetails/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -29,9 +31,17 @@ const router = createBrowserRouter([
         path: '/allitem',
         element: <AllProducts />
       },
+    {
+      path: '/productDetails/:id',
+      element: <ProductDetails />
+    },
       {
         path: '/addProduct',
         element: <AddProduct />
+      },
+      {
+        path: '/addedProduct',
+        element: <AddedProducts></AddedProducts>
       }
     ]
   },

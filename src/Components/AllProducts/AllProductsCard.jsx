@@ -1,7 +1,8 @@
 import { Fade } from "react-awesome-reveal";
+import { Link } from "react-router-dom";
 
 const AllProductsCard = ({service} ) => {
-  const { name, image, description, price, rating } = service;
+  const {_id, name, image, description, price, rating } = service;
   return (
    <Fade damping={0.5}>
      <div className="card bg-base-100 md:w-96 shadow-xl">
@@ -19,7 +20,7 @@ const AllProductsCard = ({service} ) => {
       </div>
       <div className="card-actions justify-start">
         <button className="btn text-white font-semibold btn-primary">Buy Now</button>
-        <button className="btn btn-ghost bg-white text-black font-semibold">Details</button>
+        <Link to={`/productDetails/${_id}`} className="btn btn-ghost bg-white text-black font-semibold">Details</Link>
 
       </div>
     </div>

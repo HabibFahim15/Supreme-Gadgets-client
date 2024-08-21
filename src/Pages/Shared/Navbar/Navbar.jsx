@@ -64,12 +64,13 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                <ul tabIndex={0} className="dropdown-content menu bg-base-300 dark:text-white rounded-box z-50 w-64 p-2 shadow">
+                <ul tabIndex={0} className="dropdown-content menu bg-purple-900 dark:text-white rounded-box z-50 w-64 p-2 shadow">
                   <div className="divider font-semibold">User Info</div>
                   <li className='font-semibold text-md'><a>Name: {user.displayName}</a></li>
                   <li className='font-semibold text-md'><a>Email: {user.email}</a></li>
-                  <Link to={'addProduct'} className='btn-ghost  my-4 font-semibold bg-gray-800 text-white btn'>Add Product</Link>
-                  <li className='flex rounded-lg bg-orange-300 border-red-100'><a  onClick={handleLogOut} className='btn-ghost  font-semibold text-black btn'>Log Out</a></li>
+                  <Link to={'addProduct'} className='btn-ghost my-2 font-semibold bg-cyan-200 text-black btn'>Add Product</Link>
+                  <Link to={'addedProduct'} className='btn-ghost mb-6 font-semibold bg-cyan-200 text-black btn'>Added Product</Link>
+                  <li className='flex rounded-lg bg-red-400 border-red-100'><a  onClick={handleLogOut} className='btn-ghost  font-semibold text-white btn'>Log Out</a></li>
                 </ul>
               </div>
               
